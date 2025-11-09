@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>90-Day Workout Tracker (Start: 2025-11-09)</title>
+<style>
+:root{--bg:#0e0f12;--card:#17181d;--ink:#f2f2f2;--muted:#a6adbb;--accent:#2dd4bf;--accent2:#60a5fa;}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);}
+header{position:sticky;top:0;background:linear-gradient(180deg,#0e0f12,#0e0f12cc 80%,transparent);backdrop-filter:blur(8px);padding:12px 16px;border-bottom:1px solid #222;}
+.container{max-width:980px;margin:0 auto;padding:16px;}
+h1{margin:0;font-size:1.25rem}
+.card{background:var(--card);border:1px solid #23242a;border-radius:14px;padding:14px;margin:10px 0}
+.progress{height:12px;background:#1f2026;border:1px solid #2a2b31;border-radius:999px;overflow:hidden;margin-top:6px}
+.progress>i{display:block;height:100%;width:0%;background:linear-gradient(90deg,var(--accent),var(--accent2));transition:width .3s ease}
+ul{margin:8px 0 0 0;padding-left:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+textarea{width:100%;background:#111;color:#ddd;border:1px solid #2a2b31;border-radius:10px}
+footer{text-align:center;opacity:.7;padding:16px}
+.section-tag{display:inline-block;background:#1a1c21;border:1px solid #2a2b31;border-radius:999px;padding:2px 8px;margin-left:6px;color:var(--muted)}
+.done-badge{font-size:.8rem;color:var(--accent)}
+</style>
+</head>
+<body data-start="2025-11-09">
+<header><div class="container"><h1>90‑Day Workout Tracker — Starting 2025-11-09</h1>
+<div class="progress"><i id="bar"></i></div><small id="pt">0% complete</small></div></header>
+<div class="container">
+
+<section class="card">
+<h3>Week 1 • Day 1: Day 1 – Upper Body (arms/shoulders) <span class="section-tag">Sun Nov 09</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_0_0" type="checkbox"> Dumbbell curls – 4×12</label></li>
+<li><label><input id="m_0_1" type="checkbox"> Dumbbell shoulder press – 3×10</label></li>
+<li><label><input id="m_0_2" type="checkbox"> Bench/Chair triceps dips – 4×10</label></li>
+<li><label><input id="m_0_3" type="checkbox"> One-arm dumbbell rows – 3×12/side</label></li>
+<li><label><input id="m_0_4" type="checkbox"> Plank – 3×40s</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_0_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_0_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_0_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_0" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 1 • Day 2: Day 2 – Cardio + Core <span class="section-tag">Mon Nov 10</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_1_0" type="checkbox"> Jump rope – 10 min</label></li>
+<li><label><input id="m_1_1" type="checkbox"> Mountain climbers – 3×30s</label></li>
+<li><label><input id="m_1_2" type="checkbox"> Flutter kicks – 3×20</label></li>
+<li><label><input id="m_1_3" type="checkbox"> Russian twists – 3×20</label></li>
+<li><label><input id="m_1_4" type="checkbox"> Stretch – 5 min</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_1_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_1_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_1_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_1" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 1 • Day 3: Day 3 – Legs <span class="section-tag">Tue Nov 11</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_2_0" type="checkbox"> Dumbbell squats – 4×15</label></li>
+<li><label><input id="m_2_1" type="checkbox"> Lunges – 3×12/leg</label></li>
+<li><label><input id="m_2_2" type="checkbox"> Calf raises – 3×25</label></li>
+<li><label><input id="m_2_3" type="checkbox"> Glute bridges – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_2_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_2_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_2_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_2" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 1 • Day 4: Day 4 – Boxing + Abs <span class="section-tag">Wed Nov 12</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_3_0" type="checkbox"> Bag work – 3×2 min rounds</label></li>
+<li><label><input id="m_3_1" type="checkbox"> Sit-ups – 3×20</label></li>
+<li><label><input id="m_3_2" type="checkbox"> Leg raises (lying/hanging) – 3×15</label></li>
+<li><label><input id="m_3_3" type="checkbox"> Plank shoulder taps – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_3_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_3_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_3_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_3" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 1 • Day 5: Day 5 – Full Body <span class="section-tag">Thu Nov 13</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_4_0" type="checkbox"> Push-ups – 4×10</label></li>
+<li><label><input id="m_4_1" type="checkbox"> Dumbbell deadlifts – 4×12</label></li>
+<li><label><input id="m_4_2" type="checkbox"> Jump rope – 5 min</label></li>
+<li><label><input id="m_4_3" type="checkbox"> Curl-to-press – 3×10</label></li>
+<li><label><input id="m_4_4" type="checkbox"> Side planks – 3×30s/side</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_4_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_4_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_4_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_4" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 1 • Day 6: Day 6 – Core & HIIT <span class="section-tag">Fri Nov 14</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_5_0" type="checkbox"> 4 rounds: 30s high knees + 30s burpees + 30s rest</label></li>
+<li><label><input id="m_5_1" type="checkbox"> Ab wheel or crunches – 4×15</label></li>
+<li><label><input id="m_5_2" type="checkbox"> Side crunches – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_5_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_5_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_5_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_5" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 1 • Day 7: Day 7 – Rest / Mobility <span class="section-tag">Sat Nov 15</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_6_0" type="checkbox"> Light walk 20–30 min</label></li>
+<li><label><input id="m_6_1" type="checkbox"> Stretch or foam roll – 10 min</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_6_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_6_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_6_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_6" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 2 • Day 8: Day 1 – Upper Body (arms/shoulders) <span class="section-tag">Sun Nov 16</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_7_0" type="checkbox"> Dumbbell curls – 4×12</label></li>
+<li><label><input id="m_7_1" type="checkbox"> Dumbbell shoulder press – 3×10</label></li>
+<li><label><input id="m_7_2" type="checkbox"> Bench/Chair triceps dips – 4×10</label></li>
+<li><label><input id="m_7_3" type="checkbox"> One-arm dumbbell rows – 3×12/side</label></li>
+<li><label><input id="m_7_4" type="checkbox"> Plank – 3×40s</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_7_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_7_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_7_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_7" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 2 • Day 9: Day 2 – Cardio + Core <span class="section-tag">Mon Nov 17</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_8_0" type="checkbox"> Jump rope – 10 min</label></li>
+<li><label><input id="m_8_1" type="checkbox"> Mountain climbers – 3×30s</label></li>
+<li><label><input id="m_8_2" type="checkbox"> Flutter kicks – 3×20</label></li>
+<li><label><input id="m_8_3" type="checkbox"> Russian twists – 3×20</label></li>
+<li><label><input id="m_8_4" type="checkbox"> Stretch – 5 min</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_8_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_8_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_8_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_8" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 2 • Day 10: Day 3 – Legs <span class="section-tag">Tue Nov 18</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_9_0" type="checkbox"> Dumbbell squats – 4×15</label></li>
+<li><label><input id="m_9_1" type="checkbox"> Lunges – 3×12/leg</label></li>
+<li><label><input id="m_9_2" type="checkbox"> Calf raises – 3×25</label></li>
+<li><label><input id="m_9_3" type="checkbox"> Glute bridges – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_9_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_9_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_9_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_9" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 2 • Day 11: Day 4 – Boxing + Abs <span class="section-tag">Wed Nov 19</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_10_0" type="checkbox"> Bag work – 3×2 min rounds</label></li>
+<li><label><input id="m_10_1" type="checkbox"> Sit-ups – 3×20</label></li>
+<li><label><input id="m_10_2" type="checkbox"> Leg raises (lying/hanging) – 3×15</label></li>
+<li><label><input id="m_10_3" type="checkbox"> Plank shoulder taps – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_10_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_10_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_10_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_10" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 2 • Day 12: Day 5 – Full Body <span class="section-tag">Thu Nov 20</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_11_0" type="checkbox"> Push-ups – 4×10</label></li>
+<li><label><input id="m_11_1" type="checkbox"> Dumbbell deadlifts – 4×12</label></li>
+<li><label><input id="m_11_2" type="checkbox"> Jump rope – 5 min</label></li>
+<li><label><input id="m_11_3" type="checkbox"> Curl-to-press – 3×10</label></li>
+<li><label><input id="m_11_4" type="checkbox"> Side planks – 3×30s/side</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_11_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_11_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_11_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_11" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 2 • Day 13: Day 6 – Core & HIIT <span class="section-tag">Fri Nov 21</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_12_0" type="checkbox"> 4 rounds: 30s high knees + 30s burpees + 30s rest</label></li>
+<li><label><input id="m_12_1" type="checkbox"> Ab wheel or crunches – 4×15</label></li>
+<li><label><input id="m_12_2" type="checkbox"> Side crunches – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_12_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_12_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_12_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_12" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 2 • Day 14: Day 7 – Rest / Mobility <span class="section-tag">Sat Nov 22</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_13_0" type="checkbox"> Light walk 20–30 min</label></li>
+<li><label><input id="m_13_1" type="checkbox"> Stretch or foam roll – 10 min</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_13_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_13_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_13_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_13" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 3 • Day 15: Day 1 – Upper Body (arms/shoulders) <span class="section-tag">Sun Nov 23</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_14_0" type="checkbox"> Dumbbell curls – 4×12</label></li>
+<li><label><input id="m_14_1" type="checkbox"> Dumbbell shoulder press – 3×10</label></li>
+<li><label><input id="m_14_2" type="checkbox"> Bench/Chair triceps dips – 4×10</label></li>
+<li><label><input id="m_14_3" type="checkbox"> One-arm dumbbell rows – 3×12/side</label></li>
+<li><label><input id="m_14_4" type="checkbox"> Plank – 3×40s</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_14_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_14_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_14_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_14" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 3 • Day 16: Day 2 – Cardio + Core <span class="section-tag">Mon Nov 24</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_15_0" type="checkbox"> Jump rope – 10 min</label></li>
+<li><label><input id="m_15_1" type="checkbox"> Mountain climbers – 3×30s</label></li>
+<li><label><input id="m_15_2" type="checkbox"> Flutter kicks – 3×20</label></li>
+<li><label><input id="m_15_3" type="checkbox"> Russian twists – 3×20</label></li>
+<li><label><input id="m_15_4" type="checkbox"> Stretch – 5 min</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_15_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_15_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_15_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_15" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 3 • Day 17: Day 3 – Legs <span class="section-tag">Tue Nov 25</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_16_0" type="checkbox"> Dumbbell squats – 4×15</label></li>
+<li><label><input id="m_16_1" type="checkbox"> Lunges – 3×12/leg</label></li>
+<li><label><input id="m_16_2" type="checkbox"> Calf raises – 3×25</label></li>
+<li><label><input id="m_16_3" type="checkbox"> Glute bridges – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_16_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_16_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_16_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_16" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 3 • Day 18: Day 4 – Boxing + Abs <span class="section-tag">Wed Nov 26</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_17_0" type="checkbox"> Bag work – 3×2 min rounds</label></li>
+<li><label><input id="m_17_1" type="checkbox"> Sit-ups – 3×20</label></li>
+<li><label><input id="m_17_2" type="checkbox"> Leg raises (lying/hanging) – 3×15</label></li>
+<li><label><input id="m_17_3" type="checkbox"> Plank shoulder taps – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_17_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_17_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_17_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_17" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 3 • Day 19: Day 5 – Full Body <span class="section-tag">Thu Nov 27</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_18_0" type="checkbox"> Push-ups – 4×10</label></li>
+<li><label><input id="m_18_1" type="checkbox"> Dumbbell deadlifts – 4×12</label></li>
+<li><label><input id="m_18_2" type="checkbox"> Jump rope – 5 min</label></li>
+<li><label><input id="m_18_3" type="checkbox"> Curl-to-press – 3×10</label></li>
+<li><label><input id="m_18_4" type="checkbox"> Side planks – 3×30s/side</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_18_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_18_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_18_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_18" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 3 • Day 20: Day 6 – Core & HIIT <span class="section-tag">Fri Nov 28</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_19_0" type="checkbox"> 4 rounds: 30s high knees + 30s burpees + 30s rest</label></li>
+<li><label><input id="m_19_1" type="checkbox"> Ab wheel or crunches – 4×15</label></li>
+<li><label><input id="m_19_2" type="checkbox"> Side crunches – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_19_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_19_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_19_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_19" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 3 • Day 21: Day 7 – Rest / Mobility <span class="section-tag">Sat Nov 29</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_20_0" type="checkbox"> Light walk 20–30 min</label></li>
+<li><label><input id="m_20_1" type="checkbox"> Stretch or foam roll – 10 min</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_20_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_20_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_20_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_20" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 4 • Day 22: Day 1 – Upper Body (arms/shoulders) <span class="section-tag">Sun Nov 30</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_21_0" type="checkbox"> Dumbbell curls – 4×12</label></li>
+<li><label><input id="m_21_1" type="checkbox"> Dumbbell shoulder press – 3×10</label></li>
+<li><label><input id="m_21_2" type="checkbox"> Bench/Chair triceps dips – 4×10</label></li>
+<li><label><input id="m_21_3" type="checkbox"> One-arm dumbbell rows – 3×12/side</label></li>
+<li><label><input id="m_21_4" type="checkbox"> Plank – 3×40s</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_21_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_21_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_21_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_21" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 4 • Day 23: Day 2 – Cardio + Core <span class="section-tag">Mon Dec 01</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_22_0" type="checkbox"> Jump rope – 10 min</label></li>
+<li><label><input id="m_22_1" type="checkbox"> Mountain climbers – 3×30s</label></li>
+<li><label><input id="m_22_2" type="checkbox"> Flutter kicks – 3×20</label></li>
+<li><label><input id="m_22_3" type="checkbox"> Russian twists – 3×20</label></li>
+<li><label><input id="m_22_4" type="checkbox"> Stretch – 5 min</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_22_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_22_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_22_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_22" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 4 • Day 24: Day 3 – Legs <span class="section-tag">Tue Dec 02</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_23_0" type="checkbox"> Dumbbell squats – 4×15</label></li>
+<li><label><input id="m_23_1" type="checkbox"> Lunges – 3×12/leg</label></li>
+<li><label><input id="m_23_2" type="checkbox"> Calf raises – 3×25</label></li>
+<li><label><input id="m_23_3" type="checkbox"> Glute bridges – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_23_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_23_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_23_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_23" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 4 • Day 25: Day 4 – Boxing + Abs <span class="section-tag">Wed Dec 03</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_24_0" type="checkbox"> Bag work – 3×2 min rounds</label></li>
+<li><label><input id="m_24_1" type="checkbox"> Sit-ups – 3×20</label></li>
+<li><label><input id="m_24_2" type="checkbox"> Leg raises (lying/hanging) – 3×15</label></li>
+<li><label><input id="m_24_3" type="checkbox"> Plank shoulder taps – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_24_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_24_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_24_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_24" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 4 • Day 26: Day 5 – Full Body <span class="section-tag">Thu Dec 04</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_25_0" type="checkbox"> Push-ups – 4×10</label></li>
+<li><label><input id="m_25_1" type="checkbox"> Dumbbell deadlifts – 4×12</label></li>
+<li><label><input id="m_25_2" type="checkbox"> Jump rope – 5 min</label></li>
+<li><label><input id="m_25_3" type="checkbox"> Curl-to-press – 3×10</label></li>
+<li><label><input id="m_25_4" type="checkbox"> Side planks – 3×30s/side</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_25_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_25_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_25_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_25" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 4 • Day 27: Day 6 – Core & HIIT <span class="section-tag">Fri Dec 05</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_26_0" type="checkbox"> 4 rounds: 30s high knees + 30s burpees + 30s rest</label></li>
+<li><label><input id="m_26_1" type="checkbox"> Ab wheel or crunches – 4×15</label></li>
+<li><label><input id="m_26_2" type="checkbox"> Side crunches – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_26_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_26_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_26_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_26" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 4 • Day 28: Day 7 – Rest / Mobility <span class="section-tag">Sat Dec 06</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_27_0" type="checkbox"> Light walk 20–30 min</label></li>
+<li><label><input id="m_27_1" type="checkbox"> Stretch or foam roll – 10 min</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_27_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_27_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_27_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_27" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 5 • Day 29: Day 1 – Upper Body (arms/shoulders) <span class="section-tag">Sun Dec 07</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_28_0" type="checkbox"> Dumbbell curls – 4×12</label></li>
+<li><label><input id="m_28_1" type="checkbox"> Dumbbell shoulder press – 3×10</label></li>
+<li><label><input id="m_28_2" type="checkbox"> Bench/Chair triceps dips – 4×10</label></li>
+<li><label><input id="m_28_3" type="checkbox"> One-arm dumbbell rows – 3×12/side</label></li>
+<li><label><input id="m_28_4" type="checkbox"> Plank – 3×40s</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_28_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_28_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_28_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_28" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 5 • Day 30: Day 2 – Cardio + Core <span class="section-tag">Mon Dec 08</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_29_0" type="checkbox"> Jump rope – 10 min</label></li>
+<li><label><input id="m_29_1" type="checkbox"> Mountain climbers – 3×30s</label></li>
+<li><label><input id="m_29_2" type="checkbox"> Flutter kicks – 3×20</label></li>
+<li><label><input id="m_29_3" type="checkbox"> Russian twists – 3×20</label></li>
+<li><label><input id="m_29_4" type="checkbox"> Stretch – 5 min</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_29_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_29_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_29_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_29" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 5 • Day 31: Day 3 – Legs <span class="section-tag">Tue Dec 09</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_30_0" type="checkbox"> Dumbbell squats – 4×15</label></li>
+<li><label><input id="m_30_1" type="checkbox"> Lunges – 3×12/leg</label></li>
+<li><label><input id="m_30_2" type="checkbox"> Calf raises – 3×25</label></li>
+<li><label><input id="m_30_3" type="checkbox"> Glute bridges – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_30_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_30_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_30_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_30" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 5 • Day 32: Day 4 – Boxing + Abs <span class="section-tag">Wed Dec 10</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_31_0" type="checkbox"> Bag work – 3×2 min rounds</label></li>
+<li><label><input id="m_31_1" type="checkbox"> Sit-ups – 3×20</label></li>
+<li><label><input id="m_31_2" type="checkbox"> Leg raises (lying/hanging) – 3×15</label></li>
+<li><label><input id="m_31_3" type="checkbox"> Plank shoulder taps – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_31_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_31_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_31_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_31" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 5 • Day 33: Day 5 – Full Body <span class="section-tag">Thu Dec 11</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_32_0" type="checkbox"> Push-ups – 4×10</label></li>
+<li><label><input id="m_32_1" type="checkbox"> Dumbbell deadlifts – 4×12</label></li>
+<li><label><input id="m_32_2" type="checkbox"> Jump rope – 5 min</label></li>
+<li><label><input id="m_32_3" type="checkbox"> Curl-to-press – 3×10</label></li>
+<li><label><input id="m_32_4" type="checkbox"> Side planks – 3×30s/side</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_32_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_32_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_32_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_32" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 5 • Day 34: Day 6 – Core & HIIT <span class="section-tag">Fri Dec 12</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_33_0" type="checkbox"> 4 rounds: 30s high knees + 30s burpees + 30s rest</label></li>
+<li><label><input id="m_33_1" type="checkbox"> Ab wheel or crunches – 4×15</label></li>
+<li><label><input id="m_33_2" type="checkbox"> Side crunches – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_33_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_33_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_33_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_33" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 5 • Day 35: Day 7 – Rest / Mobility <span class="section-tag">Sat Dec 13</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_34_0" type="checkbox"> Light walk 20–30 min</label></li>
+<li><label><input id="m_34_1" type="checkbox"> Stretch or foam roll – 10 min</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_34_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_34_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_34_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_34" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 6 • Day 36: Day 1 – Upper Body (arms/shoulders) <span class="section-tag">Sun Dec 14</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_35_0" type="checkbox"> Dumbbell curls – 4×12</label></li>
+<li><label><input id="m_35_1" type="checkbox"> Dumbbell shoulder press – 3×10</label></li>
+<li><label><input id="m_35_2" type="checkbox"> Bench/Chair triceps dips – 4×10</label></li>
+<li><label><input id="m_35_3" type="checkbox"> One-arm dumbbell rows – 3×12/side</label></li>
+<li><label><input id="m_35_4" type="checkbox"> Plank – 3×40s</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_35_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_35_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_35_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_35" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 6 • Day 37: Day 2 – Cardio + Core <span class="section-tag">Mon Dec 15</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_36_0" type="checkbox"> Jump rope – 10 min</label></li>
+<li><label><input id="m_36_1" type="checkbox"> Mountain climbers – 3×30s</label></li>
+<li><label><input id="m_36_2" type="checkbox"> Flutter kicks – 3×20</label></li>
+<li><label><input id="m_36_3" type="checkbox"> Russian twists – 3×20</label></li>
+<li><label><input id="m_36_4" type="checkbox"> Stretch – 5 min</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_36_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_36_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_36_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_36" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 6 • Day 38: Day 3 – Legs <span class="section-tag">Tue Dec 16</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_37_0" type="checkbox"> Dumbbell squats – 4×15</label></li>
+<li><label><input id="m_37_1" type="checkbox"> Lunges – 3×12/leg</label></li>
+<li><label><input id="m_37_2" type="checkbox"> Calf raises – 3×25</label></li>
+<li><label><input id="m_37_3" type="checkbox"> Glute bridges – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_37_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_37_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_37_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_37" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 6 • Day 39: Day 4 – Boxing + Abs <span class="section-tag">Wed Dec 17</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_38_0" type="checkbox"> Bag work – 3×2 min rounds</label></li>
+<li><label><input id="m_38_1" type="checkbox"> Sit-ups – 3×20</label></li>
+<li><label><input id="m_38_2" type="checkbox"> Leg raises (lying/hanging) – 3×15</label></li>
+<li><label><input id="m_38_3" type="checkbox"> Plank shoulder taps – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_38_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_38_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_38_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_38" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 6 • Day 40: Day 5 – Full Body <span class="section-tag">Thu Dec 18</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_39_0" type="checkbox"> Push-ups – 4×10</label></li>
+<li><label><input id="m_39_1" type="checkbox"> Dumbbell deadlifts – 4×12</label></li>
+<li><label><input id="m_39_2" type="checkbox"> Jump rope – 5 min</label></li>
+<li><label><input id="m_39_3" type="checkbox"> Curl-to-press – 3×10</label></li>
+<li><label><input id="m_39_4" type="checkbox"> Side planks – 3×30s/side</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_39_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_39_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_39_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_39" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 6 • Day 41: Day 6 – Core & HIIT <span class="section-tag">Fri Dec 19</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_40_0" type="checkbox"> 4 rounds: 30s high knees + 30s burpees + 30s rest</label></li>
+<li><label><input id="m_40_1" type="checkbox"> Ab wheel or crunches – 4×15</label></li>
+<li><label><input id="m_40_2" type="checkbox"> Side crunches – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_40_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_40_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_40_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_40" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 6 • Day 42: Day 7 – Rest / Mobility <span class="section-tag">Sat Dec 20</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_41_0" type="checkbox"> Light walk 20–30 min</label></li>
+<li><label><input id="m_41_1" type="checkbox"> Stretch or foam roll – 10 min</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_41_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_41_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_41_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_41" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 7 • Day 43: Day 1 – Upper Body (arms/shoulders) <span class="section-tag">Sun Dec 21</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_42_0" type="checkbox"> Dumbbell curls – 4×12</label></li>
+<li><label><input id="m_42_1" type="checkbox"> Dumbbell shoulder press – 3×10</label></li>
+<li><label><input id="m_42_2" type="checkbox"> Bench/Chair triceps dips – 4×10</label></li>
+<li><label><input id="m_42_3" type="checkbox"> One-arm dumbbell rows – 3×12/side</label></li>
+<li><label><input id="m_42_4" type="checkbox"> Plank – 3×40s</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_42_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_42_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_42_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_42" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 7 • Day 44: Day 2 – Cardio + Core <span class="section-tag">Mon Dec 22</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_43_0" type="checkbox"> Jump rope – 10 min</label></li>
+<li><label><input id="m_43_1" type="checkbox"> Mountain climbers – 3×30s</label></li>
+<li><label><input id="m_43_2" type="checkbox"> Flutter kicks – 3×20</label></li>
+<li><label><input id="m_43_3" type="checkbox"> Russian twists – 3×20</label></li>
+<li><label><input id="m_43_4" type="checkbox"> Stretch – 5 min</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_43_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_43_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_43_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_43" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 7 • Day 45: Day 3 – Legs <span class="section-tag">Tue Dec 23</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_44_0" type="checkbox"> Dumbbell squats – 4×15</label></li>
+<li><label><input id="m_44_1" type="checkbox"> Lunges – 3×12/leg</label></li>
+<li><label><input id="m_44_2" type="checkbox"> Calf raises – 3×25</label></li>
+<li><label><input id="m_44_3" type="checkbox"> Glute bridges – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_44_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_44_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_44_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_44" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 7 • Day 46: Day 4 – Boxing + Abs <span class="section-tag">Wed Dec 24</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_45_0" type="checkbox"> Bag work – 3×2 min rounds</label></li>
+<li><label><input id="m_45_1" type="checkbox"> Sit-ups – 3×20</label></li>
+<li><label><input id="m_45_2" type="checkbox"> Leg raises (lying/hanging) – 3×15</label></li>
+<li><label><input id="m_45_3" type="checkbox"> Plank shoulder taps – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_45_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_45_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_45_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_45" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 7 • Day 47: Day 5 – Full Body <span class="section-tag">Thu Dec 25</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_46_0" type="checkbox"> Push-ups – 4×10</label></li>
+<li><label><input id="m_46_1" type="checkbox"> Dumbbell deadlifts – 4×12</label></li>
+<li><label><input id="m_46_2" type="checkbox"> Jump rope – 5 min</label></li>
+<li><label><input id="m_46_3" type="checkbox"> Curl-to-press – 3×10</label></li>
+<li><label><input id="m_46_4" type="checkbox"> Side planks – 3×30s/side</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_46_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_46_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_46_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_46" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 7 • Day 48: Day 6 – Core & HIIT <span class="section-tag">Fri Dec 26</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_47_0" type="checkbox"> 4 rounds: 30s high knees + 30s burpees + 30s rest</label></li>
+<li><label><input id="m_47_1" type="checkbox"> Ab wheel or crunches – 4×15</label></li>
+<li><label><input id="m_47_2" type="checkbox"> Side crunches – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_47_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_47_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_47_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_47" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 7 • Day 49: Day 7 – Rest / Mobility <span class="section-tag">Sat Dec 27</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_48_0" type="checkbox"> Light walk 20–30 min</label></li>
+<li><label><input id="m_48_1" type="checkbox"> Stretch or foam roll – 10 min</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_48_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_48_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_48_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_48" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 8 • Day 50: Day 1 – Upper Body (arms/shoulders) <span class="section-tag">Sun Dec 28</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_49_0" type="checkbox"> Dumbbell curls – 4×12</label></li>
+<li><label><input id="m_49_1" type="checkbox"> Dumbbell shoulder press – 3×10</label></li>
+<li><label><input id="m_49_2" type="checkbox"> Bench/Chair triceps dips – 4×10</label></li>
+<li><label><input id="m_49_3" type="checkbox"> One-arm dumbbell rows – 3×12/side</label></li>
+<li><label><input id="m_49_4" type="checkbox"> Plank – 3×40s</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_49_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_49_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_49_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_49" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 8 • Day 51: Day 2 – Cardio + Core <span class="section-tag">Mon Dec 29</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_50_0" type="checkbox"> Jump rope – 10 min</label></li>
+<li><label><input id="m_50_1" type="checkbox"> Mountain climbers – 3×30s</label></li>
+<li><label><input id="m_50_2" type="checkbox"> Flutter kicks – 3×20</label></li>
+<li><label><input id="m_50_3" type="checkbox"> Russian twists – 3×20</label></li>
+<li><label><input id="m_50_4" type="checkbox"> Stretch – 5 min</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_50_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_50_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_50_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_50" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 8 • Day 52: Day 3 – Legs <span class="section-tag">Tue Dec 30</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_51_0" type="checkbox"> Dumbbell squats – 4×15</label></li>
+<li><label><input id="m_51_1" type="checkbox"> Lunges – 3×12/leg</label></li>
+<li><label><input id="m_51_2" type="checkbox"> Calf raises – 3×25</label></li>
+<li><label><input id="m_51_3" type="checkbox"> Glute bridges – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_51_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_51_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_51_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_51" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 8 • Day 53: Day 4 – Boxing + Abs <span class="section-tag">Wed Dec 31</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_52_0" type="checkbox"> Bag work – 3×2 min rounds</label></li>
+<li><label><input id="m_52_1" type="checkbox"> Sit-ups – 3×20</label></li>
+<li><label><input id="m_52_2" type="checkbox"> Leg raises (lying/hanging) – 3×15</label></li>
+<li><label><input id="m_52_3" type="checkbox"> Plank shoulder taps – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_52_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_52_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_52_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_52" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 8 • Day 54: Day 5 – Full Body <span class="section-tag">Thu Jan 01</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_53_0" type="checkbox"> Push-ups – 4×10</label></li>
+<li><label><input id="m_53_1" type="checkbox"> Dumbbell deadlifts – 4×12</label></li>
+<li><label><input id="m_53_2" type="checkbox"> Jump rope – 5 min</label></li>
+<li><label><input id="m_53_3" type="checkbox"> Curl-to-press – 3×10</label></li>
+<li><label><input id="m_53_4" type="checkbox"> Side planks – 3×30s/side</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_53_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_53_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_53_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_53" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 8 • Day 55: Day 6 – Core & HIIT <span class="section-tag">Fri Jan 02</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_54_0" type="checkbox"> 4 rounds: 30s high knees + 30s burpees + 30s rest</label></li>
+<li><label><input id="m_54_1" type="checkbox"> Ab wheel or crunches – 4×15</label></li>
+<li><label><input id="m_54_2" type="checkbox"> Side crunches – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_54_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_54_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_54_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_54" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 8 • Day 56: Day 7 – Rest / Mobility <span class="section-tag">Sat Jan 03</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_55_0" type="checkbox"> Light walk 20–30 min</label></li>
+<li><label><input id="m_55_1" type="checkbox"> Stretch or foam roll – 10 min</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_55_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_55_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_55_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_55" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 9 • Day 57: Day 1 – Upper Body (arms/shoulders) <span class="section-tag">Sun Jan 04</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_56_0" type="checkbox"> Dumbbell curls – 4×12</label></li>
+<li><label><input id="m_56_1" type="checkbox"> Dumbbell shoulder press – 3×10</label></li>
+<li><label><input id="m_56_2" type="checkbox"> Bench/Chair triceps dips – 4×10</label></li>
+<li><label><input id="m_56_3" type="checkbox"> One-arm dumbbell rows – 3×12/side</label></li>
+<li><label><input id="m_56_4" type="checkbox"> Plank – 3×40s</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_56_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_56_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_56_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_56" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 9 • Day 58: Day 2 – Cardio + Core <span class="section-tag">Mon Jan 05</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_57_0" type="checkbox"> Jump rope – 10 min</label></li>
+<li><label><input id="m_57_1" type="checkbox"> Mountain climbers – 3×30s</label></li>
+<li><label><input id="m_57_2" type="checkbox"> Flutter kicks – 3×20</label></li>
+<li><label><input id="m_57_3" type="checkbox"> Russian twists – 3×20</label></li>
+<li><label><input id="m_57_4" type="checkbox"> Stretch – 5 min</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_57_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_57_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_57_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_57" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 9 • Day 59: Day 3 – Legs <span class="section-tag">Tue Jan 06</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_58_0" type="checkbox"> Dumbbell squats – 4×15</label></li>
+<li><label><input id="m_58_1" type="checkbox"> Lunges – 3×12/leg</label></li>
+<li><label><input id="m_58_2" type="checkbox"> Calf raises – 3×25</label></li>
+<li><label><input id="m_58_3" type="checkbox"> Glute bridges – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_58_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_58_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_58_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_58" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 9 • Day 60: Day 4 – Boxing + Abs <span class="section-tag">Wed Jan 07</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_59_0" type="checkbox"> Bag work – 3×2 min rounds</label></li>
+<li><label><input id="m_59_1" type="checkbox"> Sit-ups – 3×20</label></li>
+<li><label><input id="m_59_2" type="checkbox"> Leg raises (lying/hanging) – 3×15</label></li>
+<li><label><input id="m_59_3" type="checkbox"> Plank shoulder taps – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_59_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_59_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_59_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_59" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 9 • Day 61: Day 5 – Full Body <span class="section-tag">Thu Jan 08</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_60_0" type="checkbox"> Push-ups – 4×10</label></li>
+<li><label><input id="m_60_1" type="checkbox"> Dumbbell deadlifts – 4×12</label></li>
+<li><label><input id="m_60_2" type="checkbox"> Jump rope – 5 min</label></li>
+<li><label><input id="m_60_3" type="checkbox"> Curl-to-press – 3×10</label></li>
+<li><label><input id="m_60_4" type="checkbox"> Side planks – 3×30s/side</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_60_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_60_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_60_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_60" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 9 • Day 62: Day 6 – Core & HIIT <span class="section-tag">Fri Jan 09</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_61_0" type="checkbox"> 4 rounds: 30s high knees + 30s burpees + 30s rest</label></li>
+<li><label><input id="m_61_1" type="checkbox"> Ab wheel or crunches – 4×15</label></li>
+<li><label><input id="m_61_2" type="checkbox"> Side crunches – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_61_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_61_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_61_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_61" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 9 • Day 63: Day 7 – Rest / Mobility <span class="section-tag">Sat Jan 10</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_62_0" type="checkbox"> Light walk 20–30 min</label></li>
+<li><label><input id="m_62_1" type="checkbox"> Stretch or foam roll – 10 min</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_62_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_62_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_62_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_62" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 10 • Day 64: Day 1 – Upper Body (arms/shoulders) <span class="section-tag">Sun Jan 11</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_63_0" type="checkbox"> Dumbbell curls – 4×12</label></li>
+<li><label><input id="m_63_1" type="checkbox"> Dumbbell shoulder press – 3×10</label></li>
+<li><label><input id="m_63_2" type="checkbox"> Bench/Chair triceps dips – 4×10</label></li>
+<li><label><input id="m_63_3" type="checkbox"> One-arm dumbbell rows – 3×12/side</label></li>
+<li><label><input id="m_63_4" type="checkbox"> Plank – 3×40s</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_63_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_63_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_63_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_63" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 10 • Day 65: Day 2 – Cardio + Core <span class="section-tag">Mon Jan 12</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_64_0" type="checkbox"> Jump rope – 10 min</label></li>
+<li><label><input id="m_64_1" type="checkbox"> Mountain climbers – 3×30s</label></li>
+<li><label><input id="m_64_2" type="checkbox"> Flutter kicks – 3×20</label></li>
+<li><label><input id="m_64_3" type="checkbox"> Russian twists – 3×20</label></li>
+<li><label><input id="m_64_4" type="checkbox"> Stretch – 5 min</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_64_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_64_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_64_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_64" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 10 • Day 66: Day 3 – Legs <span class="section-tag">Tue Jan 13</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_65_0" type="checkbox"> Dumbbell squats – 4×15</label></li>
+<li><label><input id="m_65_1" type="checkbox"> Lunges – 3×12/leg</label></li>
+<li><label><input id="m_65_2" type="checkbox"> Calf raises – 3×25</label></li>
+<li><label><input id="m_65_3" type="checkbox"> Glute bridges – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_65_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_65_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_65_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_65" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 10 • Day 67: Day 4 – Boxing + Abs <span class="section-tag">Wed Jan 14</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_66_0" type="checkbox"> Bag work – 3×2 min rounds</label></li>
+<li><label><input id="m_66_1" type="checkbox"> Sit-ups – 3×20</label></li>
+<li><label><input id="m_66_2" type="checkbox"> Leg raises (lying/hanging) – 3×15</label></li>
+<li><label><input id="m_66_3" type="checkbox"> Plank shoulder taps – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_66_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_66_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_66_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_66" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 10 • Day 68: Day 5 – Full Body <span class="section-tag">Thu Jan 15</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_67_0" type="checkbox"> Push-ups – 4×10</label></li>
+<li><label><input id="m_67_1" type="checkbox"> Dumbbell deadlifts – 4×12</label></li>
+<li><label><input id="m_67_2" type="checkbox"> Jump rope – 5 min</label></li>
+<li><label><input id="m_67_3" type="checkbox"> Curl-to-press – 3×10</label></li>
+<li><label><input id="m_67_4" type="checkbox"> Side planks – 3×30s/side</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_67_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_67_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_67_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_67" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 10 • Day 69: Day 6 – Core & HIIT <span class="section-tag">Fri Jan 16</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_68_0" type="checkbox"> 4 rounds: 30s high knees + 30s burpees + 30s rest</label></li>
+<li><label><input id="m_68_1" type="checkbox"> Ab wheel or crunches – 4×15</label></li>
+<li><label><input id="m_68_2" type="checkbox"> Side crunches – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_68_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_68_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_68_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_68" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 10 • Day 70: Day 7 – Rest / Mobility <span class="section-tag">Sat Jan 17</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_69_0" type="checkbox"> Light walk 20–30 min</label></li>
+<li><label><input id="m_69_1" type="checkbox"> Stretch or foam roll – 10 min</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_69_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_69_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_69_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_69" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 11 • Day 71: Day 1 – Upper Body (arms/shoulders) <span class="section-tag">Sun Jan 18</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_70_0" type="checkbox"> Dumbbell curls – 4×12</label></li>
+<li><label><input id="m_70_1" type="checkbox"> Dumbbell shoulder press – 3×10</label></li>
+<li><label><input id="m_70_2" type="checkbox"> Bench/Chair triceps dips – 4×10</label></li>
+<li><label><input id="m_70_3" type="checkbox"> One-arm dumbbell rows – 3×12/side</label></li>
+<li><label><input id="m_70_4" type="checkbox"> Plank – 3×40s</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_70_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_70_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_70_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_70" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 11 • Day 72: Day 2 – Cardio + Core <span class="section-tag">Mon Jan 19</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_71_0" type="checkbox"> Jump rope – 10 min</label></li>
+<li><label><input id="m_71_1" type="checkbox"> Mountain climbers – 3×30s</label></li>
+<li><label><input id="m_71_2" type="checkbox"> Flutter kicks – 3×20</label></li>
+<li><label><input id="m_71_3" type="checkbox"> Russian twists – 3×20</label></li>
+<li><label><input id="m_71_4" type="checkbox"> Stretch – 5 min</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_71_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_71_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_71_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_71" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 11 • Day 73: Day 3 – Legs <span class="section-tag">Tue Jan 20</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_72_0" type="checkbox"> Dumbbell squats – 4×15</label></li>
+<li><label><input id="m_72_1" type="checkbox"> Lunges – 3×12/leg</label></li>
+<li><label><input id="m_72_2" type="checkbox"> Calf raises – 3×25</label></li>
+<li><label><input id="m_72_3" type="checkbox"> Glute bridges – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_72_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_72_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_72_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_72" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 11 • Day 74: Day 4 – Boxing + Abs <span class="section-tag">Wed Jan 21</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_73_0" type="checkbox"> Bag work – 3×2 min rounds</label></li>
+<li><label><input id="m_73_1" type="checkbox"> Sit-ups – 3×20</label></li>
+<li><label><input id="m_73_2" type="checkbox"> Leg raises (lying/hanging) – 3×15</label></li>
+<li><label><input id="m_73_3" type="checkbox"> Plank shoulder taps – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_73_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_73_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_73_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_73" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 11 • Day 75: Day 5 – Full Body <span class="section-tag">Thu Jan 22</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_74_0" type="checkbox"> Push-ups – 4×10</label></li>
+<li><label><input id="m_74_1" type="checkbox"> Dumbbell deadlifts – 4×12</label></li>
+<li><label><input id="m_74_2" type="checkbox"> Jump rope – 5 min</label></li>
+<li><label><input id="m_74_3" type="checkbox"> Curl-to-press – 3×10</label></li>
+<li><label><input id="m_74_4" type="checkbox"> Side planks – 3×30s/side</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_74_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_74_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_74_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_74" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 11 • Day 76: Day 6 – Core & HIIT <span class="section-tag">Fri Jan 23</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_75_0" type="checkbox"> 4 rounds: 30s high knees + 30s burpees + 30s rest</label></li>
+<li><label><input id="m_75_1" type="checkbox"> Ab wheel or crunches – 4×15</label></li>
+<li><label><input id="m_75_2" type="checkbox"> Side crunches – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_75_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_75_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_75_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_75" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 11 • Day 77: Day 7 – Rest / Mobility <span class="section-tag">Sat Jan 24</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_76_0" type="checkbox"> Light walk 20–30 min</label></li>
+<li><label><input id="m_76_1" type="checkbox"> Stretch or foam roll – 10 min</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_76_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_76_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_76_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_76" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 12 • Day 78: Day 1 – Upper Body (arms/shoulders) <span class="section-tag">Sun Jan 25</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_77_0" type="checkbox"> Dumbbell curls – 4×12</label></li>
+<li><label><input id="m_77_1" type="checkbox"> Dumbbell shoulder press – 3×10</label></li>
+<li><label><input id="m_77_2" type="checkbox"> Bench/Chair triceps dips – 4×10</label></li>
+<li><label><input id="m_77_3" type="checkbox"> One-arm dumbbell rows – 3×12/side</label></li>
+<li><label><input id="m_77_4" type="checkbox"> Plank – 3×40s</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_77_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_77_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_77_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_77" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 12 • Day 79: Day 2 – Cardio + Core <span class="section-tag">Mon Jan 26</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_78_0" type="checkbox"> Jump rope – 10 min</label></li>
+<li><label><input id="m_78_1" type="checkbox"> Mountain climbers – 3×30s</label></li>
+<li><label><input id="m_78_2" type="checkbox"> Flutter kicks – 3×20</label></li>
+<li><label><input id="m_78_3" type="checkbox"> Russian twists – 3×20</label></li>
+<li><label><input id="m_78_4" type="checkbox"> Stretch – 5 min</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_78_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_78_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_78_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_78" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 12 • Day 80: Day 3 – Legs <span class="section-tag">Tue Jan 27</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_79_0" type="checkbox"> Dumbbell squats – 4×15</label></li>
+<li><label><input id="m_79_1" type="checkbox"> Lunges – 3×12/leg</label></li>
+<li><label><input id="m_79_2" type="checkbox"> Calf raises – 3×25</label></li>
+<li><label><input id="m_79_3" type="checkbox"> Glute bridges – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_79_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_79_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_79_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_79" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 12 • Day 81: Day 4 – Boxing + Abs <span class="section-tag">Wed Jan 28</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_80_0" type="checkbox"> Bag work – 3×2 min rounds</label></li>
+<li><label><input id="m_80_1" type="checkbox"> Sit-ups – 3×20</label></li>
+<li><label><input id="m_80_2" type="checkbox"> Leg raises (lying/hanging) – 3×15</label></li>
+<li><label><input id="m_80_3" type="checkbox"> Plank shoulder taps – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_80_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_80_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_80_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_80" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 12 • Day 82: Day 5 – Full Body <span class="section-tag">Thu Jan 29</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_81_0" type="checkbox"> Push-ups – 4×10</label></li>
+<li><label><input id="m_81_1" type="checkbox"> Dumbbell deadlifts – 4×12</label></li>
+<li><label><input id="m_81_2" type="checkbox"> Jump rope – 5 min</label></li>
+<li><label><input id="m_81_3" type="checkbox"> Curl-to-press – 3×10</label></li>
+<li><label><input id="m_81_4" type="checkbox"> Side planks – 3×30s/side</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_81_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_81_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_81_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_81" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 12 • Day 83: Day 6 – Core & HIIT <span class="section-tag">Fri Jan 30</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_82_0" type="checkbox"> 4 rounds: 30s high knees + 30s burpees + 30s rest</label></li>
+<li><label><input id="m_82_1" type="checkbox"> Ab wheel or crunches – 4×15</label></li>
+<li><label><input id="m_82_2" type="checkbox"> Side crunches – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_82_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_82_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_82_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_82" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 12 • Day 84: Day 7 – Rest / Mobility <span class="section-tag">Sat Jan 31</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_83_0" type="checkbox"> Light walk 20–30 min</label></li>
+<li><label><input id="m_83_1" type="checkbox"> Stretch or foam roll – 10 min</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_83_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_83_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_83_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_83" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 13 • Day 85: Day 1 – Upper Body (arms/shoulders) <span class="section-tag">Sun Feb 01</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_84_0" type="checkbox"> Dumbbell curls – 4×12</label></li>
+<li><label><input id="m_84_1" type="checkbox"> Dumbbell shoulder press – 3×10</label></li>
+<li><label><input id="m_84_2" type="checkbox"> Bench/Chair triceps dips – 4×10</label></li>
+<li><label><input id="m_84_3" type="checkbox"> One-arm dumbbell rows – 3×12/side</label></li>
+<li><label><input id="m_84_4" type="checkbox"> Plank – 3×40s</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_84_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_84_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_84_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_84" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 13 • Day 86: Day 2 – Cardio + Core <span class="section-tag">Mon Feb 02</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_85_0" type="checkbox"> Jump rope – 10 min</label></li>
+<li><label><input id="m_85_1" type="checkbox"> Mountain climbers – 3×30s</label></li>
+<li><label><input id="m_85_2" type="checkbox"> Flutter kicks – 3×20</label></li>
+<li><label><input id="m_85_3" type="checkbox"> Russian twists – 3×20</label></li>
+<li><label><input id="m_85_4" type="checkbox"> Stretch – 5 min</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_85_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_85_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_85_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_85" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 13 • Day 87: Day 3 – Legs <span class="section-tag">Tue Feb 03</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_86_0" type="checkbox"> Dumbbell squats – 4×15</label></li>
+<li><label><input id="m_86_1" type="checkbox"> Lunges – 3×12/leg</label></li>
+<li><label><input id="m_86_2" type="checkbox"> Calf raises – 3×25</label></li>
+<li><label><input id="m_86_3" type="checkbox"> Glute bridges – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_86_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_86_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_86_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_86" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 13 • Day 88: Day 4 – Boxing + Abs <span class="section-tag">Wed Feb 04</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_87_0" type="checkbox"> Bag work – 3×2 min rounds</label></li>
+<li><label><input id="m_87_1" type="checkbox"> Sit-ups – 3×20</label></li>
+<li><label><input id="m_87_2" type="checkbox"> Leg raises (lying/hanging) – 3×15</label></li>
+<li><label><input id="m_87_3" type="checkbox"> Plank shoulder taps – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_87_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_87_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_87_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_87" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 13 • Day 89: Day 5 – Full Body <span class="section-tag">Thu Feb 05</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_88_0" type="checkbox"> Push-ups – 4×10</label></li>
+<li><label><input id="m_88_1" type="checkbox"> Dumbbell deadlifts – 4×12</label></li>
+<li><label><input id="m_88_2" type="checkbox"> Jump rope – 5 min</label></li>
+<li><label><input id="m_88_3" type="checkbox"> Curl-to-press – 3×10</label></li>
+<li><label><input id="m_88_4" type="checkbox"> Side planks – 3×30s/side</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_88_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_88_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_88_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_88" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+<section class="card">
+<h3>Week 13 • Day 90: Day 6 – Core & HIIT <span class="section-tag">Fri Feb 06</span></h3>
+<div class="grid">
+<div><h4>Main Work</h4><ul><li><label><input id="m_89_0" type="checkbox"> 4 rounds: 30s high knees + 30s burpees + 30s rest</label></li>
+<li><label><input id="m_89_1" type="checkbox"> Ab wheel or crunches – 4×15</label></li>
+<li><label><input id="m_89_2" type="checkbox"> Side crunches – 3×20</label></li></ul></div>
+<div><h4>Daily Core</h4><ul><li><label><input id="c_89_0" type="checkbox"> Dead bug – 3×15</label></li>
+<li><label><input id="c_89_1" type="checkbox"> Wall breathing (full exhale) – 3×8</label></li>
+<li><label><input id="c_89_2" type="checkbox"> Plank with reach – 3×10</label></li></ul></div>
+<div><h4>Notes</h4><textarea id="note_89" rows="5" placeholder="Weights, energy, etc."></textarea></div>
+</div>
+</section>
+</div>
+<footer>Stay consistent. You got this 💪</footer>
+<script>
+const key='tracker90_restart_v1';
+let state={};
+try{state=JSON.parse(localStorage.getItem(key))||{}}catch(e){state={}}
+function save(){localStorage.setItem(key,JSON.stringify(state))}
+function upd(){
+  const boxes=[...document.querySelectorAll('input[type=checkbox]')];
+  const d=boxes.filter(b=>b.checked).length;
+  const pct=Math.round(d/boxes.length*100);
+  document.getElementById('bar').style.width=pct+'%';
+  document.getElementById('pt').textContent=pct+'% complete';
+}
+document.addEventListener('change',e=>{
+  if(e.target.matches('input[type=checkbox]')){{state[e.target.id]=e.target.checked;save();upd();}}
+});
+window.addEventListener('DOMContentLoaded',()=>{
+  for(const [k,v] of Object.entries(state)){{const el=document.getElementById(k);if(el)el.checked=v;}}
+  upd();
+});
+</script>
+</body>
+</html>
